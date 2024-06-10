@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekran logowania</title>
+    <style>
+        /* Resetowanie domyślnych stylów przeglądarki */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Stylowanie całego tła strony */
+        body {
+            background-color: #800080; /* Fioletowe tło */
+        }
+
+        /* Stylowanie kontenera logowania */
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #DAA520;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #000080; 
+            color: #00BFFF; 
+        }
+
+        /* Stylowanie formularza */
+        form {
+            margin-top: 20px;
+        }
+
+        /* Stylowanie grupy formularza */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        /* Stylowanie etykiety formularza */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000080;
+        }
+
+        /* Stylowanie pola formularza */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #DAA520;
+            border-radius: 3px;
+        }
+
+        /* Stylowanie przycisku logowania */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4B0082; 
+            color: #800080; 
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2F4F4F; 
+        }
+    
+            </div>
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </div>
+</body>
+</html>
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Logowanie</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Nazwa użytkownika:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "discord.html";
+        }); 
+    </script>
+<head>
+    <link rel="icon" href="kursor.ico" type="image/x-icon">
+  </head>
+</body>
+</html>
